@@ -5,7 +5,7 @@ resource(1, "META:TYPE") "relation";
 
 resource(2, "META:L:DESC") #'MLDC' "a semantic relationship between files and entities in SEN.";
 
-resource(3, "META:S:DESC") #'MSDC' "SEN relation types.";
+resource(3, "META:S:DESC") #'MSDC' "SEN Relation";
 
 resource(4, "META:EXTENS") message(234) {
 	"type" = "relation"
@@ -13,12 +13,10 @@ resource(4, "META:EXTENS") message(234) {
 
 resource(5, "META:ATTR_INFO") message(233) {
 	"attr:name" = "SEN:REL:ID",
-	"attr:name" = "SEN:REL:TO",
 	"attr:name" = "SEN:REL:Label",
 	"attr:name" = "SEN:REL:Kind",
 	"attr:name" = "SEN:REL:Desc",
 	"attr:public_name" = "Source ID",
-	"attr:public_name" = "Target ID",
 	"attr:public_name" = "Label",
 	"attr:public_name" = "Kind",
 	"attr:public_name" = "Description",
@@ -26,18 +24,14 @@ resource(5, "META:ATTR_INFO") message(233) {
 	"attr:type" = 'CSTR',
 	"attr:type" = 'CSTR',
 	"attr:type" = 'CSTR',
-	"attr:type" = 'CSTR',
-	"attr:viewable" = false,
 	"attr:viewable" = false,
 	"attr:viewable" = true,
 	"attr:viewable" = true,
 	"attr:viewable" = true,
 	"attr:editable" = false,
-	"attr:editable" = false,
 	"attr:editable" = true,
 	"attr:editable" = true,
 	"attr:editable" = true,
-	"attr:width" = 16,
 	"attr:width" = 16,
 	"attr:width" = 60,
 	"attr:width" = 60,
@@ -46,8 +40,6 @@ resource(5, "META:ATTR_INFO") message(233) {
 	"attr:alignment" = 0,
 	"attr:alignment" = 0,
 	"attr:alignment" = 0,
-	"attr:alignment" = 0,
-	"attr:display_as" = "",
 	"attr:display_as" = "",
 	"attr:display_as" = "",
 	"attr:display_as" = "",
