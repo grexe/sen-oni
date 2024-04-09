@@ -1,0 +1,8 @@
+
+resource(0, "BEOS:TYPE") "application/x-vnd.Be-meta-mime";
+
+resource(1, "META:TYPE") "entity/music-movement";
+
+resource(2, "META:L:DESC") "an individual piece of music";
+
+resource(3, "META:S:DESC") "Movement";
