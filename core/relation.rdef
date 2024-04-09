@@ -1,0 +1,70 @@
+
+resource(0, "BEOS:TYPE") #'MIMS' "application/x-vnd.Be-meta-mime";
+
+resource(1, "META:TYPE") "relation";
+
+resource(2, "META:L:DESC") #'MLDC' "a semantic relationship between files and entities in SEN.";
+
+resource(3, "META:S:DESC") #'MSDC' "SEN relation types.";
+
+resource(4, "META:EXTENS") message(234) {
+	"type" = "relation"
+};
+
+resource(5, "META:ATTR_INFO") message(233) {
+	"attr:name" = "SEN:REL:ID",
+	"attr:name" = "SEN:REL:TO",
+	"attr:name" = "SEN:REL:Label",
+	"attr:name" = "SEN:REL:Kind",
+	"attr:name" = "SEN:REL:Desc",
+	"attr:public_name" = "Source ID",
+	"attr:public_name" = "Target ID",
+	"attr:public_name" = "Label",
+	"attr:public_name" = "Kind",
+	"attr:public_name" = "Description",
+	"attr:type" = 'CSTR',
+	"attr:type" = 'CSTR',
+	"attr:type" = 'CSTR',
+	"attr:type" = 'CSTR',
+	"attr:type" = 'CSTR',
+	"attr:viewable" = false,
+	"attr:viewable" = false,
+	"attr:viewable" = true,
+	"attr:viewable" = true,
+	"attr:viewable" = true,
+	"attr:editable" = false,
+	"attr:editable" = false,
+	"attr:editable" = true,
+	"attr:editable" = true,
+	"attr:editable" = true,
+	"attr:width" = 16,
+	"attr:width" = 16,
+	"attr:width" = 60,
+	"attr:width" = 60,
+	"attr:width" = 60,
+	"attr:alignment" = 0,
+	"attr:alignment" = 0,
+	"attr:alignment" = 0,
+	"attr:alignment" = 0,
+	"attr:alignment" = 0,
+	"attr:display_as" = "",
+	"attr:display_as" = "",
+	"attr:display_as" = "",
+	"attr:display_as" = "",
+	"attr:display_as" = "",
+	"type" = "meta"
+};
+
+resource(6, "META:ICON") #'VICN' array {
+	$"6E636966060500020006023B7DA8BABA2A3CB2743D73CA4786E04984C100FFEC"
+	$"4BFFF0A506020006023AF09B3071D1B2419A3CB69F497B2A49590F00FFFFFFFF"
+	$"FFF28902000602387D5937D1D7BBB5BC3C6B074AAA364A348800F99B05FFFCB2"
+	$"3D04017402000603BC54AC3B7F3EBA8AD3BB638B4B1366469AF3006262627DB8"
+	$"B3B3FF595959060A04345C3C5C405539540A0622452251345A3856384828440A"
+	$"0422452251345A344B0A042245344B384829440A04344B345A385638480A04C3"
+	$"B446322A302A38350D0A0401002032100A00010130321001178400040A010102"
+	$"2032100A0201032032100A0301042032100A040100000A000101100117840004"
+	$"0A010102000A020103000A030104000A05010502B41276BE47FC3EE9B5B4A55E"
+	$"C261654AAE9B0A05010502B41276BE47FC3EE9B5B4A55E4833D34B0E9B0A0501"
+	$"0502B41276BE47FC3EE9B5B4A55E4853D34BEE9B"
+};
