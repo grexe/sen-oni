@@ -1,8 +1,0 @@
-
-resource(0, "BEOS:TYPE") "application/x-vnd.Be-meta-mime";
-
-resource(1, "META:TYPE") "relation/association";
-
-resource(2, "META:L:DESC") #'MSDC' "a general associative relation in SEN";
-
-resource(3, "META:S:DESC") #'MSDC' "Association";

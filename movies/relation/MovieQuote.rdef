@@ -1,0 +1,52 @@
+
+resource(0, "BEOS:TYPE") "application/x-vnd.Be-meta-mime";
+
+resource(1, "META:TYPE") "relation/movie-ref";
+
+resource(2, "META:L:DESC") #'MSDC' "Reference to a Movie";
+
+resource(3, "META:S:DESC") #'MSDC' "Movie Reference";
+
+resource(5, "META:ATTR_INFO") message(233) {
+        "attr:alignment" = 1,
+        "attr:alignment" = 1,
+        "attr:alignment" = 1,
+        "attr:alignment" = 1,
+        "attr:alignment" = 1,
+        "attr:display_as" = "",
+        "attr:display_as" = "",
+        "attr:display_as" = "",
+        "attr:display_as" = "",
+        "attr:display_as" = "",
+        "attr:editable" = true,
+        "attr:editable" = true,
+        "attr:editable" = true,
+        "attr:editable" = true,
+        "attr:editable" = true,
+        "attr:name" = "Movie:Ref:Scene",
+        "attr:name" = "Movie:Ref:ChapterFrom",
+        "attr:name" = "Movie:Ref:ChapterTo",
+        "attr:name" = "Movie:Ref:TimeCodeFrom",
+        "attr:name" = "Movie:Ref:TimeCodeTo",
+        "attr:public_name" = "Scene",
+        "attr:public_name" = "Chapter Start",
+        "attr:public_name" = "Chapter End",
+        "attr:public_name" = "Time Code Start",
+        "attr:public_name" = "Time Code End",
+        "attr:type" = 'CSTR',
+        "attr:type" = 'SHRT',
+        "attr:type" = 'SHRT',
+        "attr:type" = 'TIME',
+        "attr:type" = 'TIME',
+        "attr:viewable" = true,
+        "attr:viewable" = true,
+        "attr:viewable" = true,
+        "attr:viewable" = true,
+        "attr:viewable" = true,
+        "attr:width" = 60,
+        "attr:width" = 30,
+        "attr:width" = 30,
+        "attr:width" = 30,
+        "attr:width" = 30,
+        "type" = "relation/movie-ref"
+};
