@@ -1,11 +1,10 @@
+resource(0, "BEOS:TYPE") #'MIMS' "application/x-vnd.Be-meta-mime";
 
-resource(0, "BEOS:TYPE") "application/x-vnd.Be-meta-mime";
+resource(1, "META:TYPE") "meta/x-vnd.sen-meta.concept";
 
-resource(1, "META:TYPE") "meta/concept";
+resource(2, "META:L:DESC") #'MLDC' "an abstract semantic concept in SEN";
 
-resource(2, "META:L:DESC") #'MSDC' "an abstract semantic concept in SEN";
-
-resource(3, "META:S:DESC") #'MSDC' "SEN Concept";
+resource(3, "META:S:DESC") #'MSDC' "Concept";
 
 resource(4, "META:ICON") #'VICN' array {
 	$"6E6369660503010000020006023B9FE037664CBA16573E39B04A01E3449F7E00"

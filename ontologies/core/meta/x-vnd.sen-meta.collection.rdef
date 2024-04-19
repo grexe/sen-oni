@@ -1,13 +1,10 @@
+resource(0, "META:TYPE") "meta/x-vnd.sen-meta.collection";
 
-resource(0, "BEOS:TYPE") "application/x-vnd.Be-meta-mime";
+resource(1, "META:L:DESC") #'MLDC' "a set or virtual folder for grouping similar entities and files in SEN";
 
-resource(1, "META:TYPE") "meta/collection";
+resource(2, "META:S:DESC") #'MSDC' "Collection";
 
-resource(2, "META:L:DESC") #'MSDC' "a set or virtual folder for grouping similar entities and files in SEN";
-
-resource(3, "META:S:DESC") #'MSDC' "SEN Collection";
-
-resource(6, "META:ICON") #'VICN' array {
+resource(3, "META:ICON") #'VICN' array {
 	$"6E636966090301000002000602B87FA13B71ABBBC2A0B8BA5D4AD8A2499B1D00"
 	$"FFCC99FFBD87520399663302000602BB12A83A8F8CBA8F8CBB12A84AF4464AF0"
 	$"6300996633FF683A0E020006023A0ED73B6E12BB6E123A0ED74917CE4860C500"

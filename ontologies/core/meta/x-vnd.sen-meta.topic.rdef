@@ -1,13 +1,10 @@
+resource(0, "META:TYPE") "meta/x-vnd.sen-meta.topic";
 
-resource(0, "BEOS:TYPE") "application/x-vnd.Be-meta-mime";
+resource(1, "META:L:DESC") #'MLDC' "a concrete category grouping entities or files in SEN";
 
-resource(1, "META:TYPE") "meta/topic";
+resource(2, "META:S:DESC") #'MSDC' "Topic";
 
-resource(2, "META:L:DESC") #'MSDC' "a concrete category grouping entities or files in SEN";
-
-resource(3, "META:S:DESC") #'MSDC' "SEN Topic";
-
-resource(4, "META:ICON") #'VICN' array {
+resource(3, "META:ICON") #'VICN' array {
 	$"6E636966070401580501020102023E60000000000000003D9AAA49EFFF467555"
 	$"00FFFC04C8E4FFFC0300020106023AC0000000000000003AC00049A000458000"
 	$"00FFFFFFFFFFDE00020116023A95550000000000003F1000499AAA49300000F2"

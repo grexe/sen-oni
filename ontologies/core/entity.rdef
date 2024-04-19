@@ -7,12 +7,10 @@ resource(2, "META:L:DESC") #'MLDC' "A semantic entity representing anything.";
 
 resource(3, "META:S:DESC") #'MSDC' "Entity";
 
-resource(4, "META:EXTENS") message(234) {
-	"type" = "entity"
-};
+resource(4, "META:PREF_APP") #'MSIG' "application/x-vnd.Haiku-StyledEdit";
 
 resource(5, "META:ATTR_INFO") message(233) {
-	"attr:name" = "Entity:Fictional",
+	"attr:name" = "SEN:Entity:Fictional",
 	"attr:public_name" = "Fictional",
 	"attr:type" = 'BOOL',
 	"attr:viewable" = true,

@@ -1,13 +1,5 @@
 
-resource(0, "BEOS:TYPE") "application/x-vnd.Be-meta-mime";
-
-resource(1, "META:TYPE") "meta/tag";
-
-resource(2, "META:L:DESC") #'MSDC' "a tag or label for entities or files";
-
-resource(3, "META:S:DESC") #'MSDC' "SEN Tag";
-
-resource(4, "META:ICON") #'VICN' array {
+resource(<your resource id here>) #'VICN' array {
 	$"6E63696606050102000602377F23B5E29837E298397F2348E9E44AA79800FFFF"
 	$"00FFFFBF00020106023C80000000000000003F800049000046000000FFEA00FF"
 	$"FFAA0003FDFF970200020238000000000000000040000044000000000000FBFF"

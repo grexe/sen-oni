@@ -1,0 +1,6 @@
+
+resource(0, "META:TYPE") "entity/x-vnd.sen-entity.object";
+
+resource(1, "META:L:DESC") #'MLDC' "a general object or Thing in SEN";
+
+resource(2, "META:S:DESC") #'MSDC' "Object";
