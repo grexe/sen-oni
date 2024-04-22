@@ -11,7 +11,7 @@ mkdir -p $SEN_CONFIG_ONTO
 
 oni_output=/tmp/.oni-out
 ontology_name=$(basename $1)
-ontology_path=$oni_output/$ontology_name
+ontology_path=$oni_output/ontologies/$ontology_name
 
 # clean up from previous run, separate dir per ontology given as arg
 rm -fR $ontology_path
@@ -47,7 +47,7 @@ cp -a $ontology_path/* $MIME_DB_PATH/
 
 echo registering ontology in SEN configuration...
 
-mkdir $SEN_CONFIG_ONTO/$ontology_name
+mkdir -p $SEN_CONFIG_ONTO/$ontology_name
 addattr "BEOS:TYPE" $META_MIME_TYPE $SEN_CONFIG_ONTO/$ontology_name
 addattr "META:TYPE" $SEN_ONTO_TYPE $SEN_CONFIG_ONTO/$ontology_name
 
