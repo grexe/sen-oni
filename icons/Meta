@@ -1,29 +1,5 @@
 
-resource(0, "BEOS:TYPE") #'MIMS' "application/x-vnd.Be-meta-mime";
-
-resource(1, "META:TYPE") "meta";
-
-resource(2, "META:L:DESC") #'MLDC' "Used for labelling and grouping entities in SEN.";
-
-resource(3, "META:S:DESC") #'MSDC' "SEN Meta";
-
-resource(4, "META:EXTENS") message(234) {
-	"type" = "meta"
-};
-
-resource(5, "META:ATTR_INFO") message(233) {
-	"attr:name" = "SEN:Meta:Active",
-	"attr:public_name" = "Active",
-	"attr:type" = 'BOOL',
-	"attr:viewable" = true,
-	"attr:editable" = true,
-	"attr:width" = 30,
-	"attr:alignment" = 1,
-	"attr:display_as" = "",
-	"type" = "meta"
-};
-
-resource(6, "META:ICON") #'VICN' array {
+resource(<your resource id here>) #'VICN' array {
 	$"6E6369660E0500020016023A9DAAB462F736E45D3D2B8047139D4A2B710068FF"
 	$"39057D020016023B2B47BB18653D0FA53D225148297046CA1900EEFF9A020016"
 	$"023B3049396B0ABA90833C646E4A101543299500FFFFDA020016023C71E33A0C"

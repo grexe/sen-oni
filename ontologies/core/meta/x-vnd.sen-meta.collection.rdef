@@ -1,6 +1,6 @@
 resource(0, "META:TYPE") "meta/x-vnd.sen-meta.collection";
 
-resource(1, "META:L:DESC") #'MLDC' "a set or virtual folder for grouping similar entities and files in SEN";
+resource(1, "META:L:DESC") #'MLDC' "a lose bag for grouping similar entities and files in SEN";
 
 resource(2, "META:S:DESC") #'MSDC' "Collection";
 
