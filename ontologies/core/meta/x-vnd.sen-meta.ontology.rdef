@@ -4,7 +4,43 @@ resource(1, "META:L:DESC") #'MLDC' "defines a set of entities, types and relatio
 
 resource(2, "META:S:DESC") #'MSDC' "Ontology";
 
-resource(3, "META:ICON") #'VICN' array {
+resource(3, "META:ATTR_INFO") message(233) {
+	"attr:name" = "SEN:onto:schema_url",
+	"attr:name" = "SEN:onto:author",
+	"attr:name" = "SEN:onto:version",
+	"attr:name" = "SEN:onto:description",
+	"attr:public_name" = "Schema URL",
+	"attr:public_name" = "Author",
+	"attr:public_name" = "Version",
+	"attr:public_name" = "Description",
+	"attr:type" = 'CSTR',
+	"attr:type" = 'CSTR',
+	"attr:type" = 'CSTR',
+	"attr:type" = 'CSTR',
+	"attr:alignment" = 1,
+	"attr:alignment" = 1,
+	"attr:alignment" = 1,
+	"attr:alignment" = 1,
+	"attr:display_as" = "",
+	"attr:display_as" = "",
+	"attr:display_as" = "",
+	"attr:display_as" = "",
+	"attr:editable" = false,
+	"attr:editable" = false,
+	"attr:editable" = false,
+	"attr:editable" = false,
+	"attr:viewable" = true,
+	"attr:viewable" = true,
+	"attr:viewable" = true,
+	"attr:viewable" = true,
+	"attr:width" = 60,
+	"attr:width" = 60,
+	"attr:width" = 30,
+	"attr:width" = 60,
+	"type" = "meta/x-vnd.sen-meta.ontology"
+};
+
+resource(4, "META:ICON") #'VICN' array {
 	$"6E63696608010100006B02001602BA6666BB33323B3332BA6666480CCD4BD333"
 	$"00D8FFEC0200160439D755BC0F313C0F3139D7554AE7974ABAE901FA1C8C7934"
 	$"FFC202001603378CEDB9CE9739CE97378CED4AADF149868800B684FAFFD20200"

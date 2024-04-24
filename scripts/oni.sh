@@ -1,9 +1,23 @@
 #!/bin/bash
+
 # todo: params check and usage info
 
-SEN_ONTO_TYPE=meta/x-vnd.sen-meta.ontology
+set -e
+
+# read manifest
+. $1/manifest.properties
+
+# SEN config
 SEN_CONFIG_ONTO=$HOME/config/settings/sen/ontologies
 
+# SEN Ontology config
+SEN_ONTO_TYPE=meta/x-vnd.sen-meta.ontology
+SEN_ONTO_AUTHOR_ATTR="SEN:onto:author"
+SEN_ONTO_SCHEMA_ATTR="SEN:onto:schema_url"
+SEN_ONTO_VERSION_ATTR="SEN:onto:version"
+SEN_ONTO_DESCRIPTION_ATTR="SEN:onto:description"
+
+# Haiku MIME config
 MIME_DB_PATH=$HOME/config/settings/mime_db
 META_MIME_TYPE=application/x-vnd.Be-meta-mime
 
@@ -29,7 +43,6 @@ function create_mime_type()
 }
 
 # setup execution context
-set -e
 mkdir -p $ontology_path/meta
 mkdir $ontology_path/entity
 mkdir $ontology_path/relation
@@ -47,10 +60,17 @@ cp -a $ontology_path/* $MIME_DB_PATH/
 
 echo registering ontology in SEN configuration...
 
-mkdir -p $SEN_CONFIG_ONTO/$ontology_name
-addattr "BEOS:TYPE" $META_MIME_TYPE $SEN_CONFIG_ONTO/$ontology_name
-addattr "META:TYPE" $SEN_ONTO_TYPE $SEN_CONFIG_ONTO/$ontology_name
+sen_onto_path=$SEN_CONFIG_ONTO/$ontology_name
+mkdir -p $sen_onto_path
+addattr "BEOS:TYPE" $SEN_ONTO_TYPE $sen_onto_path
 
+# write onto manifest attributes
+addattr "$SEN_ONTO_SCHEMA_ATTR" "$SCHEMA" $sen_onto_path
+addattr "$SEN_ONTO_VERSION_ATTR" "$VERSION" $sen_onto_path
+addattr "$SEN_ONTO_AUTHOR_ATTR" "$AUTHOR" $sen_onto_path
+addattr "$SEN_ONTO_DESCRIPTION_ATTR" "$DESCRIPTION" $sen_onto_path
+
+#todo: just link from MIME DB here
 cp -a $ontology_path/* $SEN_CONFIG_ONTO/$ontology_name/
 
 echo Done. Please restart to apply changes.
