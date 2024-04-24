@@ -16,6 +16,7 @@ SEN_ONTO_AUTHOR_ATTR="SEN:onto:author"
 SEN_ONTO_SCHEMA_ATTR="SEN:onto:schema_url"
 SEN_ONTO_VERSION_ATTR="SEN:onto:version"
 SEN_ONTO_DESCRIPTION_ATTR="SEN:onto:description"
+SEN_ONTO_STABLE_ATTR="SEN:onto:stable"
 
 # Haiku MIME config
 MIME_DB_PATH=$HOME/config/settings/mime_db
@@ -69,6 +70,9 @@ addattr "$SEN_ONTO_SCHEMA_ATTR" "$SCHEMA" $sen_onto_path
 addattr "$SEN_ONTO_VERSION_ATTR" "$VERSION" $sen_onto_path
 addattr "$SEN_ONTO_AUTHOR_ATTR" "$AUTHOR" $sen_onto_path
 addattr "$SEN_ONTO_DESCRIPTION_ATTR" "$DESCRIPTION" $sen_onto_path
+if [ "$STABLE" = "true" ] || [ "$STABLE" = "1" ]; then
+    addattr -t bool "$SEN_ONTO_STABLE_ATTR" true $sen_onto_path
+fi
 
 cp -a $ontology_path/* $SEN_CONFIG_ONTO/$ontology_name/
 
