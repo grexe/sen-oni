@@ -62,7 +62,7 @@ echo registering ontology in SEN configuration...
 
 sen_onto_path=$SEN_CONFIG_ONTO/$ontology_name
 mkdir -p $sen_onto_path
-addattr "BEOS:TYPE" $SEN_ONTO_TYPE $sen_onto_path
+addattr "BEOS:TYPE" -t mime $SEN_ONTO_TYPE $sen_onto_path
 
 # write onto manifest attributes
 addattr "$SEN_ONTO_SCHEMA_ATTR" "$SCHEMA" $sen_onto_path
@@ -70,7 +70,6 @@ addattr "$SEN_ONTO_VERSION_ATTR" "$VERSION" $sen_onto_path
 addattr "$SEN_ONTO_AUTHOR_ATTR" "$AUTHOR" $sen_onto_path
 addattr "$SEN_ONTO_DESCRIPTION_ATTR" "$DESCRIPTION" $sen_onto_path
 
-#todo: just link from MIME DB here
 cp -a $ontology_path/* $SEN_CONFIG_ONTO/$ontology_name/
 
 echo Done. Please restart to apply changes.
