@@ -1,0 +1,6 @@
+
+resource(0, "META:TYPE") "relation/x-vnd.sen-labs.relation.contains";
+
+resource(1, "META:L:DESC") #'MLDC' "relates to self contained components or parts.";
+
+resource(2, "META:S:DESC") #'MSDC' "Contains";

@@ -1,5 +1,5 @@
 
-resource(0, "META:TYPE") "relation/x-vnd.sen-relation.association";
+resource(0, "META:TYPE") "relation/x-vnd.sen-labs.relation.association";
 
 resource(1, "META:L:DESC") #'MLDC' "a general associative relation in SEN";
 
