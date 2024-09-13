@@ -1,8 +1,0 @@
-
-resource(0, "BEOS:TYPE") "application/x-vnd.Be-meta-mime";
-
-resource(1, "META:TYPE") "relation/music-compatibleBefore";
-
-resource(2, "META:L:DESC") #'MSDC' "mixes well before the related Song";
-
-resource(3, "META:S:DESC") #'MSDC' "Song compatible before";
