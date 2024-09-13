@@ -1,0 +1,51 @@
+resource(0, "BEOS:TYPE") "application/x-vnd.Be-meta-mime";
+
+resource(1, "META:TYPE") "relation/book-quote";
+
+resource(2, "META:L:DESC") #'MSDC' "quotes some text in a book";
+
+resource(3, "META:S:DESC") #'MSDC' "Book Quote";
+
+resource(5, "META:ATTR_INFO") message(233) {
+	"attr:name" = "BookQuote:pageStart",
+	"attr:name" = "BookQuote:pageEnd",
+	"attr:name" = "BookQuote:textStart",
+	"attr:name" = "BookQuote:textEnd",
+	"attr:name" = "BookQuote:source",
+	"attr:public_name" = "Start Page",
+	"attr:public_name" = "End Page",
+	"attr:public_name" = "Start Text",
+	"attr:public_name" = "End Text",
+	"attr:public_name" = "Source",
+	"attr:type" = 'SHRT',
+	"attr:type" = 'SHRT',
+	"attr:type" = 'CSTR',
+	"attr:type" = 'CSTR',
+	"attr:type" = 'CSTR',
+	"attr:viewable" = true,
+	"attr:viewable" = true,
+	"attr:viewable" = true,
+	"attr:viewable" = true,
+	"attr:viewable" = true,
+	"attr:editable" = true,
+	"attr:editable" = true,
+	"attr:editable" = true,
+	"attr:editable" = true,
+	"attr:editable" = true,
+	"attr:width" = 30,
+	"attr:width" = 30,
+	"attr:width" = 60,
+	"attr:width" = 60,
+	"attr:width" = 60,
+	"attr:alignment" = 0,
+	"attr:alignment" = 0,
+	"attr:alignment" = 0,
+	"attr:alignment" = 0,
+	"attr:alignment" = 0,
+	"attr:display_as" = "",
+	"attr:display_as" = "",
+	"attr:display_as" = "",
+	"attr:display_as" = "",
+	"attr:display_as" = "",
+	"type" = "relation/book-quote"
+};
