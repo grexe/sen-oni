@@ -1,0 +1,64 @@
+resource(0, "BEOS:TYPE") "application/x-vnd.Be-meta-mime";
+
+resource(1, "META:TYPE") "relation/x-vnd.sen-labs.relation.code.include";
+
+resource(2, "META:L:DESC") #'MSDC' "include dependency to some other sourcecode";
+
+resource(3, "META:S:DESC") #'MSDC' "Source Include";
+
+resource(4, "META:ATTR_INFO") message(233) {
+	"attr:name" = "SourceInclude:path",
+	"attr:name" = "SourceInclude:search_path",
+	"attr:name" = "SourceInclude:global",
+	"attr:name" = "be:line",
+	"attr:public_name" = "Include Path",
+	"attr:public_name" = "Search Path",
+	"attr:public_name" = "Global?",
+	"attr:public_name" = "Line",
+	"attr:type" = 'CSTR',
+	"attr:type" = 'CSTR',
+	"attr:type" = 'BOOL',
+	"attr:type" = 'SHRT',
+	"attr:viewable" = true,
+	"attr:viewable" = true,
+	"attr:viewable" = true,
+	"attr:viewable" = true,
+	"attr:editable" = true,
+	"attr:editable" = true,
+	"attr:editable" = true,
+	"attr:editable" = true,
+	"attr:width" = 60,
+	"attr:width" = 60,
+	"attr:width" = 30,
+	"attr:width" = 30,
+	"attr:alignment" = 0,
+	"attr:alignment" = 0,
+	"attr:alignment" = 0,
+	"attr:alignment" = 0,
+	"attr:display_as" = "",
+	"attr:display_as" = "",
+	"attr:display_as" = "",
+	"attr:display_as" = "",
+	"type" = "relation/x-vnd.sen-labs.relation.code.include"
+};
+
+resource vector_icon {
+		$"6E6369660A0200060338D2F73CD163BF82B23B84A94B88504870C900FFEFA5BD"
+	$"FFFCC0FFFFF8900501020106023E49240000000000003CAAAA4940004A30007C"
+	$"F1B706FFFFFCC0040192020016023A55A6BAC2293F0DA33E958646C2EB47A1D6"
+	$"0001FF9E03010000020012023B98000000000000003C44004AD8004ADA000001"
+	$"0FFF0180020106023C00000000000000003C00004A30004A500000DCF4FFFF60"
+	$"94AA02001603360FF5B7B2B23AD6A4392A794ABC0B4AF0350050C285FF5505FF"
+	$"0E0606AE0BB40BBF4D33C3AEB75CC172BDEFC606C13EC804CA27BD82C117B920"
+	$"C51BBB40BF06B8073AB6BC0605AE02B57D3EB9B9C3EFB7BB44BBB751BD75C936"
+	$"CA8DC1B0402F0A093B593D5BBFCDC93D455BC516C5F060465B435D4544510A04"
+	$"5A425E3F5A3D574008022E40BDB53308023142BE34BC0308023444C0E4BB5108"
+	$"023746C0D8BD7508023A48C270BDB508023D4A4CBD820802404CC408BFE50605"
+	$"7A024658565D5B5CCA15CB53CB0FCA59584A540204423AC2BE3ABE583A384438"
+	$"BF2438C38A424EBE584EC2BE4E4C444CC38A4CBF240606BA0A4C51565B585AC9"
+	$"1CCA4EC983C9E959584F4E4B4D0E0A03020203000A0101011001178400040A02"
+	$"0101000A0101001001178400040A000100000A04040604080A1815FF01178100"
+	$"040A04040604080A18001501178200040A04030907051815FF01178100040A06"
+	$"010B000A05010D1001178400040A08010D000A05010C1001178400040A07010C"
+	$"000A09010C023C00000000000000003C000048B00048F000"
+};
