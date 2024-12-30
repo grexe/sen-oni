@@ -1,0 +1,8 @@
+
+resource(0, "BEOS:TYPE") "application/x-vnd.Be-meta-mime";
+
+resource(1, "META:TYPE") "entity/music-work";
+
+resource(2, "META:L:DESC") "a musical work or piece of music (general)";
+
+resource(3, "META:S:DESC") "Music work";

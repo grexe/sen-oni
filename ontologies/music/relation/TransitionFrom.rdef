@@ -1,0 +1,8 @@
+
+resource(0, "BEOS:TYPE") "application/x-vnd.Be-meta-mime";
+
+resource(1, "META:TYPE") "relation/music.transition.from";
+
+resource(2, "META:L:DESC") #'MSDC' "suitable as a transition to this song";
+
+resource(3, "META:S:DESC") #'MSDC' "Music transition from";

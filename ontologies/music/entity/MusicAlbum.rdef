@@ -1,0 +1,8 @@
+
+resource(0, "BEOS:TYPE") "application/x-vnd.Be-meta-mime";
+
+resource(1, "META:TYPE") "entity/music-album";
+
+resource(2, "META:L:DESC") "a music album containing songs or pieces";
+
+resource(3, "META:S:DESC") "Music album";

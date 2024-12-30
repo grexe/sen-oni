@@ -1,0 +1,8 @@
+
+resource(0, "BEOS:TYPE") "application/x-vnd.Be-meta-mime";
+
+resource(1, "META:TYPE") "entity/movie-medium";
+
+resource(2, "META:L:DESC") "a physical movie medium (VHS,DVD,Bluray)";
+
+resource(3, "META:S:DESC") "Movie medium";

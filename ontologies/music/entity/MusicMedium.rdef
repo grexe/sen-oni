@@ -1,0 +1,8 @@
+
+resource(0, "BEOS:TYPE") "application/x-vnd.Be-meta-mime";
+
+resource(1, "META:TYPE") "entity/music-medium";
+
+resource(2, "META:L:DESC") "a physical music medium (CD,DVD,Bluray etc.)";
+
+resource(3, "META:S:DESC") "Music medium";
