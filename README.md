@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/meta/oni.jpg" width=320 />
+  <img src="assets/images/meta/oni.jpg" width=320 />
 </p>
 
 # SEN Ontology Interface
