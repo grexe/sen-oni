@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/meta/oni.jpg" width=320 />
+</p>
+
 # SEN Ontology Interface
 
 This repository defines entities, their properties and relationships as resources to be consumed by SEN for installation in Haiku.
