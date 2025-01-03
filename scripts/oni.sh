@@ -38,8 +38,7 @@ function create_mime_type()
     rsrc_path=$oni_output/$type_path/$type_name.rsrc
 
     rc -o $rsrc_path $1 && \
-    resattr -O -o $oni_output/$type_path/$type_name $rsrc_path && \
-
+    mime install $rsrc_path &&
     rm $rsrc_path || false
 }
 
@@ -52,12 +51,9 @@ echo creating ontology $ontology_name from resource definitions...
 
 find $1 -iname *.rdef -print0 | while IFS= read -r -d '' file
 do
-    echo "  $file"
+    echo "  $file ..."
     create_mime_type $file || (echo "Aborting."; exit 1)
 done
-
-echo installing ontology $ontology_name to MIME DB in $MIME_DB_PATH...
-cp -a $ontology_path/* $MIME_DB_PATH/
 
 echo registering ontology in SEN configuration...
 
